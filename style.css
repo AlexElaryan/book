@@ -1,0 +1,1031 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 64px;
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+h3 {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+p {
+    font-size: 18px;
+    color: rgba(46, 50, 98, 1);
+    font-weight: 400;
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+span {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: Heebo;
+    text-align: right;
+}
+
+.cont {
+    padding: 150px 0px;
+    width: 1263px;
+    margin: auto;
+}
+
+.intro {
+    width: 100%;
+    min-height: 900px;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: 0px 54px 119px 0px rgba(71, 139, 255, 0.35) ; */
+
+}
+
+.intro img {
+    max-width: 685px;
+    object-fit: cover;
+}
+
+.intro>div {
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro h2 {
+    font-size: 64px;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h2 span {
+    font-weight: 800;
+}
+
+.intro-info {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    justify-content: flex-end;
+}
+
+.intro-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.intro-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.intro-date-item {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, .05);
+    border-radius: 15px;
+    padding: 11px 44px;
+}
+
+.intro-date p {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.intro-date span {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(152, 186, 255, 1);
+}
+
+.red-btn {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 17px 63px;
+    background: rgba(229, 58, 79, 1);
+    color: #fff;
+    border-radius: 60px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 5px 15px rgba(229, 58, 79, 1);
+    transition: .25s;
+}
+
+.red-btn:hover {
+    box-shadow: none;
+}
+
+.red-btn:active {
+    background: linear-gradient(93.19deg, #E53A4F 5.43%, #FF7A8A 95.17%);
+}
+
+.guide {
+    padding-top: 0px;
+    display: flex;
+    gap: 55px;
+}
+
+.guide-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.guide-left div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.guide h2 {
+    text-align: right;
+    color: rgba(58, 94, 229, 1);
+}
+
+.quote-right {
+    margin-bottom: 5px;
+}
+
+.quote-left {
+    transform: rotate(180deg);
+}
+
+.guide img {
+    max-width: 619px;
+    object-fit: cover;
+}
+
+.rabahma {
+    display: flex;
+    gap: 55px;
+}
+
+.rabahma h2 {
+    color: rgba(58, 94, 229, 1);
+    text-align: right;
+}
+
+.rabahma h3 {
+    max-width: 600px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(46, 50, 98, 1);
+    margin-top: 20px;
+
+}
+
+.rabahma span {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(58, 94, 229, 1);
+    margin-top: -20px;
+}
+
+.book-info {
+    background: url(img/whatsinthebook.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.book-info>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 59px;
+    padding-bottom: 0px;
+}
+
+.book-info h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.book-group {
+    background: url(img/bookgroup.png);
+    background-size: cover;
+    position: relative;
+    width: 919px;
+    height: 661px;
+}
+
+.book-massege {
+    max-width: 288px;
+    width: fit-content;
+    padding: 15px 25px 15px 28px;
+    background: #fff;
+    position: absolute;
+}
+
+.book-massege-right-tog {
+    border-radius: 25px 25px 0px 25px;
+}
+
+.book-massege-left-tog {
+    border-radius: 25px 25px 25px 0px;
+}
+
+.lighter {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+.lighter-fon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 30%;
+}
+
+.lighter-ball {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.lighter-green div {
+    background: rgba(82, 224, 125, 1);
+}
+
+.lighter-red div {
+    background: rgba(229, 58, 79, 1);
+}
+
+.lighter-blue div {
+    background: rgba(84, 142, 255, 1);
+}
+
+.lighter-yellow div {
+    background: rgba(230, 222, 29, 1);
+}
+
+.book-massege1 {
+    top: 125px;
+    left: -44px;
+}
+
+.book-massege1 .lighter {
+    top: -12px;
+    right: 70px;
+}
+
+.book-massege2 {
+    top: 297px;
+    left: -127px;
+}
+
+.book-massege2 .lighter {
+    left: 52%;
+    transform: translateX(-50%);
+    bottom: -15px;
+}
+
+.book-massege3 {
+    bottom: 144px;
+    left: 64px;
+}
+
+.book-massege3 .lighter {
+    top: -10px;
+    right: 35px;
+}
+
+.book-massege4 {
+    top: 65px;
+    right: -36px;
+}
+
+.book-massege4 .lighter {
+    left: 23px;
+    bottom: -12px;
+}
+
+.book-massege5 {
+    bottom: 267px;
+    right: -107px;
+}
+
+.book-massege5 .lighter {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15px;
+}
+
+.book-massege6 {
+    bottom: 88px;
+    right: 81px;
+}
+
+.book-massege6 .lighter {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+}
+
+footer {
+    padding: 37px 0 33px 0px;
+    margin: auto;
+    max-width: 1218px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(46, 50, 98, 1);
+}
+
+.cta {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-block {
+    width: 100%;
+    position: relative;
+    padding: 65px 104px;
+    background: url(img/CTA.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.cta-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.cta h2 {
+    max-width: 470px;
+    font-size: 48px;
+    color: #fff;
+}
+
+.cta-block img {
+    position: absolute;
+}
+
+/* -------------------- */
+
+.bookbg1 {
+    left: 37px;
+    top: 70px;
+}
+
+.bookbg1small {
+    left: 117px;
+    top: 173px;
+}
+
+.bookbg2 {
+    left: 48%;
+    bottom: 80px;
+}
+
+.bookbg2small {
+    left: 42%;
+    bottom: 45px;
+}
+
+/* -------------------- */
+
+.cta-book {
+    max-width: 469px;
+    object-fit: cover;
+    top: -155px;
+    left: 100px;
+    rotate: 4.96deg;
+    filter: drop-shadow(21px 18px 32px rgba(0, 13, 39, 0.2));
+}
+
+.cta-block-back {
+    width: calc(100% - (var(--i) * 80px));
+    height: 150px;
+    z-index: -1;
+    position: absolute;
+    bottom: calc(150px - (var(--i) * 18px));
+    background: linear-gradient(148.75deg, #3a3a82ba 1.24%, #2E74F0 100.54%);
+    border-radius: 20px;
+}
+
+
+/* media start */
+
+.forMobileIntroCenter {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .cont,
+    footer {
+        width: 1000px;
+    }
+
+    .intro img {
+        max-width: 550px;
+    }
+
+    h2,
+    .intro h2 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .guide img {
+        max-width: 400px;
+    }
+
+    .rabahma h3 {
+        font-size: 18px;
+    }
+
+    .cta-book {
+        top: -135px;
+        left: 50px;
+    }
+
+    .book-info {
+        background-image: url(img/whatsinthebooklap.png);
+    }
+
+    .book-group {
+        width: 700px;
+        height: 503px;
+    }
+
+    .book-massege {
+        max-width: 190px;
+    }
+
+    .book-massege1 {
+        left: 10px;
+        top: 140px;
+    }
+
+    .book-massege1 .lighter {
+        right: 25px;
+    }
+
+    .book-massege2 {
+        left: 0px;
+    }
+
+    .book-massege2 .lighter {
+        left: 63px;
+        transform: none;
+    }
+
+    .book-massege3 {
+        bottom: 35px;
+        left: 100px;
+    }
+
+    .book-massege3 .lighter {
+        left: 35px;
+    }
+
+    .book-massege4 {
+        right: 5px;
+    }
+
+    .book-massege4 .lighter {
+        left: auto;
+        right: 28px;
+    }
+
+    .book-massege5 {
+        bottom: 175px;
+        right: 0;
+    }
+
+    .book-massege5 .lighter {
+        transform: none;
+        left: 10px;
+        top: -12px;
+    }
+
+    .book-massege6 .lighter {
+        left: auto;
+        transform: none;
+        right: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1020px) {
+
+    .cont,
+    footer {
+        width: 700px;
+    }
+
+    .intro>div {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .intro {
+        min-height: 1547px;
+        background-image: url(img/lapbg.png);
+    }
+
+    .intro-date {
+        position: absolute;
+        top: 580px;
+        right: 78px;
+        flex-direction: column;
+    }
+
+    .intro-date-item {
+        width: 100%;
+        align-items: center;
+    }
+
+    h2,
+    .intro h2 {
+        font-size: 64px;
+    }
+
+    .intro h2 {
+        text-align: center;
+    }
+
+    .intro-title {
+        align-items: center;
+    }
+
+    .intro img {
+        max-width: 530px;
+        margin-left: -120px;
+    }
+
+    .guide img {
+        display: none;
+    }
+
+    .rabahma img {
+        max-width: 280px;
+        max-height: 395px;
+    }
+
+    .rabahma {
+        position: relative;
+    }
+
+    .rabahma h3 {
+        width: 100%;
+        position: absolute;
+        bottom: 50px;
+        margin-top: 0;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .rabahma span {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .cta h2 {
+        font-size: 42px;
+    }
+
+    .cta {
+        overflow: hidden;
+    }
+
+    .cta-book {
+        max-width: 389px;
+        left: -50px;
+    }
+
+    .bookbg1 {
+        top: -23px;
+        right: 250px;
+        left: auto;
+    }
+
+    .bookbg1small {
+        top: 64px;
+        right: 330px;
+        left: auto;
+    }
+
+    .bookbg2 {
+
+        left: 236px;
+    }
+
+    .cta-block {
+        padding: 35px 48px;
+    }
+
+
+    .cta h2 {
+        max-width: 284px;
+    }
+
+    .red-btn {
+        padding: 17px 23px;
+    }
+
+    .guide-left {
+        margin-top: -100px;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .cont,
+    footer {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    footer {
+        width: calc(100% - 30px);
+    }
+
+    h2,
+    .intro h2 {
+        font-size: 48px;
+    }
+
+    .rabahma img {
+        max-width: 220px;
+        max-height: min-content;
+    }
+
+    .rabahma {
+        gap: 20px;
+    }
+
+    .book-info {
+        background-image: url(img/whatsinthebook3mob.png);
+    }
+
+    .book-group {
+        width: 100%;
+        height: 395px;
+    }
+
+    .intro-date p {
+        font-size: 20px;
+    }
+
+    .intro-date span {
+        font-size: 10px;
+    }
+
+    .intro-date-item {
+        padding: 5px 12px;
+    }
+
+    h2,
+    .intro h2 {
+        font-size: 26px;
+    }
+
+    .intro h2 {
+        max-width: 212px;
+    }
+
+    .red-btn {
+        font-size: 18px;
+    }
+
+    .intro-title {
+        gap: 16px;
+    }
+
+    .intro {
+        min-height: 1080px;
+    }
+
+    .guide-left {
+        margin-top: 0;
+    }
+
+    .forMobileIntroCenter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .forMobileIntroCenter img {
+        margin-left: unset;
+        max-width: 400px;
+        max-height: 576px;
+    }
+
+    .forMobileIntroCenter img,
+    .forMobileIntroCenter .intro-date {
+        position: unset;
+    }
+
+    .forMobileIntroCenter .intro-date {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .intro-info .intro-date,
+    .intro>div>img {
+        display: none;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    .book-massege {
+        max-width: 106px;
+        padding: 4px 3px;
+    }
+
+    .book-massege p {
+        max-width: 93px;
+    }
+
+    .lighter {
+        width: 16px;
+        height: 16px;
+    }
+
+    .lighter-ball {
+        width: 8px;
+        height: 8px;
+    }
+
+    .book-massege-right-tog {
+        border-radius: 16px 16px 0px 16px;
+    }
+
+    .book-massege-left-tog {
+        border-radius: 16px 16px 16px 0px;
+    }
+
+    .book-group {
+        width: 395px;
+        height: 282px;
+    }
+
+    .book-info>div {
+        overflow: hidden;
+    }
+
+    .book-massege1 {
+        top: -38px;
+        left: 50px;
+    }
+
+    .book-massege1 .lighter {
+        left: 35px;
+        bottom: -8px;
+        top: auto;
+    }
+
+    .book-massege5 {
+        right: 30px;
+        bottom: auto;
+        top: 92px;
+    }
+
+    .book-massege5 .lighter {
+        left: 17px;
+        bottom: -8px;
+        top: auto;
+    }
+
+    .book-massege6 {
+        max-width: 118px;
+        top: 225px;
+        right: 39px;
+        bottom: auto;
+    }
+
+    .book-massege6 p {
+        max-width: unset;
+    }
+
+    .book-massege6 .lighter {
+        top: -8px;
+        right: 27px;
+    }
+
+    .book-massege2 {
+        top: 85px;
+        left: 15px;
+    }
+
+    .book-massege3 {
+        left: 67px;
+        bottom: 50px;
+    }
+
+    .book-massege3 .lighter {
+        top: -8px;
+    }
+
+    .book-massege2 .lighter {
+        bottom: -8px;
+        left: auto;
+        right: 17px;
+    }
+
+    .book-massege4 {
+        top: -17px;
+    }
+
+    .book-massege4 .lighter {
+        bottom: -8px;
+        right: 32px;
+    }
+
+    .guide-left {
+        margin-top: -135px;
+    }
+
+    .rabahma .guide-left {
+        margin-top: unset;
+    }
+
+    .rabahma {
+        padding-bottom: 200px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .rabahma h3 {
+        padding: 0px 15px;
+        bottom: 150px;
+    }
+
+    .rabahma span {
+        bottom: 105px;
+    }
+
+    .cta-block .cta-book {
+        max-width: 204px;
+        width: 204px;
+        height: 248px;
+        position: unset;
+        transform: translateY(-105px);
+
+    }
+
+    .cta h2 {
+        font-size: 26px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .cta-right {
+        align-items: center;
+    }
+
+    .cta {
+        overflow: visible;
+    }
+
+    .cta-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-right {
+        margin-top: -110px;
+    }
+
+    .bookbg1,
+    .bookbg2 {
+        width: 28px;
+        height: 28px;
+    }
+
+    .bookbg1small, .bookbg2small {
+        width: 18px;
+        height: 18px;   
+    }
+
+
+    .bookbg1 {
+        right: 2px;
+        top: -8px;
+    }
+
+    .bookbg1small {
+        right: 40px;
+        top: 40px;
+    }
+
+    .bookbg2 {
+        left: 5px;
+        top: 90px;
+    }
+
+    .bookbg2small {
+        left: 30px;
+        top: 180px;
+    }
+
+    .cta-block {
+        padding: 35px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .forMobileIntroCenter img {
+        max-width: 236px;
+    }
+
+    .guide-left {
+        margin-top: -88px;
+    }
+
+    .intro {
+        min-height: 810px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .book-massege4 {
+        top: -56px;
+        right: 50px;
+    }
+
+    .book-massege5 {
+        right: 45px;
+    }
+
+    .book-massege5 .lighter {
+        left: 33px;
+    }
+
+    .book-massege6 {
+        right: 55px;
+    }
+
+    .book-massege6 .lighter {
+        right: 11px;
+    }
+
+    .book-massege2 {
+        left: 45px;
+    }
+
+    .book-massege2 .lighter {
+        right: 48px;
+    }
+}
+
+
+@media screen and (max-width:370px) {
+    .rabahma h3 {
+        bottom: 120px;
+    }
+
+    .rabahma span {
+        bottom: 75px;
+    }
+}
+
+/* media end */
