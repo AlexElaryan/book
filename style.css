@@ -553,11 +553,20 @@ footer {
     color: rgba(183, 184, 199, 1);
 }
 
+.invalid-feedback::placeholder {
+    color: red !important;
+}
+
+.invalid-feedback-agreement label {
+    color: red !important;
+}
+
 .signin input[type='text'] {
     color: rgb(138, 138, 147);
 }
 
 .blue-btn {
+    z-index: 1;
     padding: 12px 50px;
     font-size: 18px;
     font-weight: 700;
@@ -603,6 +612,11 @@ footer {
     border-radius: 5px;
     border-color: rgba(228, 229, 236, 1);
 }
+
+.closeMob {
+    display: none;
+}
+
 
 @media screen and (max-width:890px) {
     .signin {
@@ -667,7 +681,7 @@ footer {
 
     .signin-img {
         transform: rotate(4.69deg);
-        max-width: 181px;
+        max-width: 188px;
         position: absolute;
         top: -42px;
         left: -19px;
@@ -686,6 +700,25 @@ footer {
     .emoji {
         width: 12px;
         height: 12px;
+    }
+
+    .signin-close {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -50px;
+        right: 0;
+        background: #fff;
+    }
+
+    .signin-close img:first-of-type {
+        display: none;
+    }
+    .closeMob {
+        display: block;
     }
 }
 
