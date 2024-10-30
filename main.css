@@ -59,7 +59,7 @@
 
 .flipbook-content {
     width: 263.83px;
-    height: 374px;
+    height: 408px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -91,7 +91,7 @@
 .paper {
     position: absolute;
     width: 263.83px;
-    height: 374px;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -136,18 +136,3 @@
 .back {
     z-index: 0;
 }
-
-#p1 {
-    z-index: 3;
-}
-
-#p2 {
-    z-index: 2;
-}
-
-#p3 {
-    z-index: 1;
-}
-
-
-
