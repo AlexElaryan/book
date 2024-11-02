@@ -212,6 +212,7 @@ body {
     background: url(img/whatsinthebook.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center top;
 }
 
 .book-info>div {
@@ -387,7 +388,7 @@ footer {
 }
 
 .cta h2 {
-    max-width: 470px;
+    max-width: 600px;
     font-size: 48px;
     color: #fff;
 }
@@ -1240,13 +1241,32 @@ footer {
     }
 
     .cta-block {
+        width: fit-content;
+        min-width: 290px;
+        height: 406px;
         display: flex;
         flex-direction: column;
+        padding: 35px;
         align-items: center;
+        background-image: url(img/ctaBgmob.png);
+        padding-bottom: 72px;
+    }
+    
+
+    .cta-block-back {
+        display: none;
+    }
+
+    .cta {
+        padding-bottom: 100px;
     }
 
     .cta-right {
         margin-top: -110px;
+    }
+
+    .cta .red-btn {
+        padding: 12px 16px;
     }
 
     .bookbg1,
@@ -1269,7 +1289,7 @@ footer {
     }
 
     .bookbg1small {
-        right: 40px;
+        right: 28px;
         top: 40px;
     }
 
@@ -1280,22 +1300,9 @@ footer {
     }
 
     .bookbg2small {
-        left: 30px;
-        top: 180px;
-    }
-
-    .cta-block {
-        width: fit-content;
-        padding: 35px;
-    }
-
-    .cta-block-back {
-        width: calc(100% - (var(--i) * 48px));
-        bottom: calc(100px - (var(--i) * 13px));
-    }
-
-    .cta {
-        padding-bottom: 100px;
+        left: 10px;
+        top: 210px;
+        transform: rotate(65deg);
     }
 
     .book-info h2 {
@@ -1407,7 +1414,7 @@ footer {
     }
 
     .book-massege4 .lighter {
-        left: 25.5px;
+        left: 27.5px;
         right: auto;
     }
 
@@ -1449,10 +1456,6 @@ footer {
 
     /* BOOK MASSEGES END */
 
-
-    .cta-block {
-        background-image: url(img/ctaBgmob.png);
-    }
 }
 
 @media screen and (max-width:550px) {
@@ -1492,19 +1495,7 @@ footer {
         margin-left: -13px;
     }
 
-    .bookbg2 {
-        left: -5px;
-    }
-
-    .bookbg1small {
-        right: 28px;
-
-    }
-    .bookbg2small {
-        left: 10px;
-        top: 210px;
-        transform: rotate(65deg);
-    }
+    
 }
 
 @media screen and (max-width:400px) {

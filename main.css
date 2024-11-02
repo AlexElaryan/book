@@ -19,7 +19,7 @@
 .content-socials-block {
     display: flex;
     flex-direction: column;
-    gap: 27px;
+    gap: 21px;
     align-items: center;
     position: absolute;
     top: 50%;
