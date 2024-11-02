@@ -553,6 +553,10 @@ footer {
     color: rgba(183, 184, 199, 1);
 }
 
+.invalid-feedback {
+    color: red !important;
+}
+
 .invalid-feedback::placeholder {
     color: red !important;
 }
