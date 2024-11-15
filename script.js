@@ -30,7 +30,6 @@ let agreement = document.getElementById('agreement');
 let email = document.querySelector('.email');
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-
 confirmSignIn.onclick = () => {
     let allValid = true;
 
@@ -55,3 +54,30 @@ confirmSignIn.onclick = () => {
         email.classList.remove('invalid-feedback');
     };
 };
+
+let signInForm = document.getElementById('signInForm');
+emailjs.init("FZ4f4ge2RT8M7ZHFE");
+
+signInForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const templateParams = {
+        from_name: 'support@levkazaryan.com',
+        reply_to: 'support@levkazaryan.com',
+        to_name: document.getElementById("name").value,
+        to_email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+    };
+
+
+
+    emailjs.send("service_x95w9fn", "template_91p13uq", templateParams)
+        .then(response => {
+            console.log("Email sent successfully!", response.status, response.text);
+            window.location = 'book.html';
+        })
+        .catch(error => {
+            console.error("Failed to send email:", error);
+        });
+
+});

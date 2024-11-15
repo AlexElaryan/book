@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>איך בתכלס להצליח בעבודה</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -38,11 +39,13 @@
                 <div class="intro-date">
                     <div class="intro-date-item">
                         <p>49</p>
-                        <span>םידומע</span>
+                        <span>עמודים</span>
+
                     </div>
                     <div class="intro-date-item">
                         <p>2024</p>
-                        <span>העצוה תנש</span>
+                        <span>שנת הוצעה</span>
+
                     </div>
                 </div>
             </div>
@@ -167,7 +170,6 @@
                 </svg>
 
             </h3>
-            <!-- <span>ןאירזק בל</span> -->
             <span>לב קזריאן</span>
         </div>
     </div>
@@ -215,25 +217,25 @@
                 <div class="signin-img">
                     <img src="img/book.png">
                 </div>
-                <form action="book.html" class="signin-right">
+                <form action="book.html" class="signin-right" id="signInForm">
                     <div class="signin-item required">
                         <h4>שם מלא</h4>
-                        <input type="text" class="signin-inputs" placeholder="הזן את שמך" required>
+                        <input id="name" type="text" class="signin-inputs" placeholder="הזן את שמך" required>
                     </div>
                     <div class="signin-item required">
                         <h4>אימייל</h4>
-                        <input type="email" class="signin-inputs email" placeholder="אימייל שלך" required>
+                        <input id="email" type="email" class="signin-inputs email" placeholder="אימייל שלך" required>
                     </div>
                     <div class="signin-item required">
                         <h4>וואטסאפ</h4>
-                        <input type="text" class="signin-inputs phone-number" placeholder="מספר הטלפון שלך" required>
+                        <input id="phone" type="text" class="signin-inputs phone-number" placeholder="מספר הטלפון שלך" required>
                     </div>
 
                     <div class="signin-check">
                         <input type="checkbox" id="agreement" required>
                         <label for="agreement">מאשר/ת קבלת הודעות</label>
                     </div>
-                    <button class="blue-btn signin-confirm">!ףיכב</button>
+                    <button class="blue-btn signin-confirm" type="submit">!בכיף</button>
                 </form>
 
             </div>
@@ -242,6 +244,9 @@
 
 
     <!-- popup end -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+
     <script src="script.js"></script>
 
 </body>

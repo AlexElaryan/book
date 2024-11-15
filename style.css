@@ -122,6 +122,7 @@ body {
 }
 
 .red-btn {
+    text-wrap: nowrap;
     font-size: 24px;
     font-weight: 700;
     padding: 17px 63px;
@@ -349,8 +350,7 @@ body {
 }
 
 .book-massege6 .lighter {
-    left: 50%;
-    transform: translateX(-50%);
+    left: 169px;
     bottom: -12px;
 }
 
@@ -841,8 +841,21 @@ footer {
 
     .book-massege6 .lighter {
         left: auto;
-        transform: none;
         right: 40px;
+    }
+}
+
+.rabahma {
+    padding-bottom: 75px;
+}
+
+@media screen and (max-width:1300px) and (min-width:1020px) {
+    .rabahma > img {
+        max-width: 400px;
+    }
+
+    .rabahma {
+        padding-bottom: 40px;
     }
 
 }
