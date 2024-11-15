@@ -610,6 +610,7 @@
 
     .webinar_helps {
         width: 100%;
+        gap: 45px;
         padding: 25px 30px;
     }
 
